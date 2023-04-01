@@ -15,13 +15,13 @@
   do {                                                                         \
     printf("[   %s   ]"                                                        \
            "\t\t" format,                                                      \
-           status, ##__va_args__);                                             \
+           status, ##__VA_ARGS__);                                             \
     printf("\r\n");                                                            \
   } while (0)
 
 #define LOG_NORMAL(format, ...)                                                \
   do {                                                                         \
-    printf("\t\t\t" format, ##__va_args__);                                    \
+    printf("\t\t\t" format, ##__VA_ARGS__);                                    \
     printf("\r\n");                                                            \
   } while (0)
 
