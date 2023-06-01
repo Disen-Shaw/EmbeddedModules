@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/* ARMCC */
 // For printf
 int fputc(int ch, FILE* f)
 {
